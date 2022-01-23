@@ -1,0 +1,507 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    max-width: 1200PX;
+    margin: 0 auto;
+}
+
+
+
+/*header*/
+
+.max{
+    background-color: #1e7d6d;
+}
+.logoimg{
+    display: block;
+    text-align: left;
+    width: 250px;
+}
+nav{
+    padding-bottom: 15px;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px auto 0 auto;
+}
+.main-nav a{
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+}
+.main-nav a:last-child{
+    border-style: none;
+}
+
+.main-nav a:hover,.flex a:hover,.footnav a:hover{
+    color: #7d1e5d;
+}
+
+.logoimg:hover{
+    opacity: 0.6;
+}
+
+.slide-in {
+	overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+	display: inline-block;
+
+}
+
+.violet{
+    position: relative;
+}
+
+.slide-in{
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 4em;
+    top: 40%;
+    left:50%
+}
+/* 上下のアニメーション*/
+.upAnime{
+    opacity: 0;/* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+    animation-name:slideTextY100;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);/* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+.slideAnimeUpDown {
+    animation-name:slideTextY-100;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+    transform: translateY(-100%);/* 要素を下の枠外に移動*/
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);/* 要素を元の位置に移動*/
+    opacity: 1;
+    }
+}
+
+/*violet*/
+.violet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity h1{
+    margin-bottom: 20px ;
+}
+.opacity p{
+    line-height: 1.5em;
+}
+
+/*maincon*/
+.maincon{
+    margin:80px auto;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(90,27,132,0.8);
+    color: #fff;
+    text-align: center;
+    vertical-align: center;
+    border-radius:20px;
+    padding:10px;
+
+}
+.maincon p{
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+.maincon h2{
+    margin-top: 20px;
+}
+/*shopguide*/
+.shopguide{
+    display: flex;
+    justify-content: space-around;
+}
+.flex span{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25em;
+    margin: 20px auto 10px auto;
+}
+.flex{
+    width: 250px;
+    display:column;
+}
+.flex a{
+    display:block;
+    text-decoration: none;
+    color: #7E1E6B;
+    text-align: left;
+    margin-top: 10px;
+}
+.flex img{
+    width: 110px;
+    height: auto;
+    text-align: center;
+}
+.flex p{
+    text-align: left;
+    line-height: 1.5em;
+    height: 7em;
+}
+
+/*wine-guide*/
+
+.wine-guide h3{
+    font-family: 'Poller One', cursive;
+    color: #5a1b84;
+    text-align: left;
+    font-size: 2em;
+    margin: 90px auto 35px;
+}
+.grid{
+    display: flex;
+    justify-content: space-around;
+}
+.guide{
+    width: 370px;
+    text-align: left;
+}
+
+.guide span{
+    display: block;
+    color: #5a1b84;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 30px auto 20px auto;
+}
+.guide p{
+    line-height: 1.5em;
+}
+
+/*wine*/
+.wine{
+    background-color: #f5f3e3;
+    margin-top: 70px;
+    padding: 30px 0 10px 0;
+}
+
+.osusume{
+    background-image: url(img/osusume.png);
+    height: 35px;
+    background-position: center;
+    color: #5a1b84;
+    font-size: 2em;
+}
+
+.yokonarabi img{
+    width: 65px;
+    height: auto;
+}
+
+.yokonarabi{
+    display: flex;
+    justify-content: space-around;
+    align-items: bottom;
+    margin-top: 45px;
+    padding: 0;
+}
+
+.yokonarabi img:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/*bigbg*/
+.bigbg{
+    background-image: url(img/trentino.jpg);
+    background-attachment: fixed;
+
+    max-width: 1920px;
+    height: 300px;
+}
+
+.location-map{
+    height: 500px;
+}
+/*footer*/
+footer{
+    background-color: #1e7d6d;
+}
+.footnav a{
+    display: inline-block;
+    color: #fff;
+}
+.yellow{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yellow p{
+    margin-right: 100px;
+    display: block;
+    color: #fff;
+}
+.footnav{
+    display: flex;
+}
+.footnav li{
+    list-style: none;
+}
+
+.footnav li:first-of-type{
+    border-right: 1px solid #fff;
+    padding-right: 5px;
+}
+.footnav li:last-of-type{
+    padding-left: 5px;
+}
+.sita{
+    margin: 15px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.top__link {
+    display: none;
+  }
+  
+  .top__link.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #5a1b84;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 500;
+  }
+
+/*----------モバイル版----------*/
+@media (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+
+    .wine-guide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shopguide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .guide ,.flex{
+        margin-bottom: 70px;
+    }
+
+    .flex a{
+        text-align: center;
+    }
+    .flex p{
+        height: auto;
+    }
+
+    .slide-in{
+        font-size: 1.4em;
+        line-height: 1.5em;
+       font-weight: 900;
+    }
+
+    .main-nav a{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        font-size: 2em;
+        padding-bottom: 2.5em;
+    }
+
+    .maincon{
+        width: 300px;
+    }
+
+    iframe{
+        width: fit-content;
+    }
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav{
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position:fixed;
+        z-index: -1;
+        opacity: 0;/*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top:0;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background:#1e7d6d;
+        /*動き*/
+        transition: all 0.3s;
+    }
+
+    /*アクティブクラスがついたら透過なしにして最前面ßへ*/
+    #g-nav.panelactive{
+        opacity: 1;
+        z-index:999;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list{
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        /* z-index: 999;  */
+        width: 100%;
+        height: 100vh;/*表示する高さ*/
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        flex-direction: column;
+        /* display: none; */
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+     #g-nav.panelactive ul {
+        display: block;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li{
+        list-style: none;
+        text-align: center; 
+    }
+
+    #g-nav li a{
+        color: #333;
+        text-decoration: none;
+        padding:10px;
+        display: block;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+        
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #fff;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    .yokonarabi img{
+        width: 30px;
+        height: auto;
+    }
+
+}

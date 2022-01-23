@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #0b3666;
+    background-color: #83d6d3;
+}
+
+a{
+    text-decoration: none;
+    color: #191970;
+    font-size: 24px;
+}
+
+a:hover{
+    color: #d683af;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+h2{
+    background-color: #fff;
+    text-align: left;
+    height: 50px;
+    line-height: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+} 
+h2 img{
+    width: 26px;
+    height: auto;
+    margin: auto 15px auto 10px;
+
+}
+
+/*header*/
+
+header{
+    background-color: #83d6d3;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    height:60px;
+}
+
+.home-logo{
+    height: 55px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.home-logo:hover{
+    opacity: .6;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+}
+
+.naviga{
+    padding-left: 35px;
+}
+
+.naviga:first-child{
+    padding: 0;
+
+}
+
+/*img*/
+.big-bg{
+    position: relative;
+}
+
+.eachTextAnime{
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Kaisei Opti', serif;
+    letter-spacing: 0.2em;
+    font-size: 4em;
+    top: 65%;
+    left:5%
+}
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+.big-bg img{
+    width: 100%;
+}
+
+/*news*/
+.news{
+    padding: 35px 20px 35px;
+    line-height: normal;
+    margin: 100px auto 50px auto;
+}
+
+.news li{
+    margin-top: 30px;
+}
+
+.news li{
+    margin-bottom: 35px;
+    list-style: none;
+}
+
+.news li:last-child{
+    margin-bottom: 0;
+}
+li p{
+    padding-left: 1em;
+}
+
+.news a{
+    font-size: 1em;
+}
+
+
+/*friends*/
+
+.friends{
+    padding: 30px 20px 20px;
+    margin-bottom: 50px;
+}
+
+.con{
+    margin: 35px auto 55px;
+    font-size: normal;
+}
+
+.content{
+    margin-top: 15px;
+    font-weight: bold;
+}
+.grid{
+    display:flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.grid img{
+    width: 300px;
+    height: auto;
+}
+.fish{
+    text-align: center;
+}
+
+.fish a{
+    font-size: 1em;
+}
+.fish img{
+    margin: 5px;
+}
+
+/*price*/
+.price{
+    padding: 30px 20px 25px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.price p{
+    margin: 35px auto 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-right: 30px;
+}
+
+table span{
+    font-size: 12px;
+}
+
+caption{
+    text-align: left;
+    font-weight: bold;
+}
+
+th,td{
+    width: 6em;
+    height: 3em;
+}
+th{
+    background-color: #6db3b0;
+    border-right:1px solid #fff;
+}
+th:last-child{
+    border: none;
+}
+
+td{
+    background-color: #fff;
+    border: 1px solid#83d6d3;
+    color: #0b3666;
+    text-align: center;
+}
+
+.annnai{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+iframe{
+    min-width: 400px;
+    min-height: 400px;
+}
+/*contact*/
+
+.contact{
+    margin: 20px 0;
+}
+form div{
+    margin-bottom: 14px;
+}
+
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"]{
+    border:none;
+    background-color: #6db3b0;
+    cursor: pointer;
+    line-height: 1;
+    padding: 1em;
+}
+input[type="submit"]:hover{
+    background-color: #d683af;
+}
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+footer p,footer address{
+    text-decoration: none;
+    padding: 10px 0 0 0;
+    font-size: small;
+    color: #fff;
+    text-align: center;
+}
+
+footer address{
+    font-style: normal;
+}
+
+.foot__nav .main-nav{
+    margin: 20px 0;
+    font-size: normal;
+    text-align: center;
+}
+
+footer img{
+    margin: 20px auto;
+}
+
+.top__link {
+    display: none;
+  }
+  
+  .top__link.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 500;
+  }
+
+
+/*--------モバイル版--------*/
+@media (max-width: 600px){
+
+    body{
+        font-size: 14px;
+    }
+    .page-header{
+        flex-direction: column;
+        height: 120px;
+    }
+    .home-logo{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .gnavi .main-nav{
+        margin: 10px auto 0 auto;
+    }
+    .main-nav .naviga a{
+        font-size: 16px;
+    }
+    .eachTextAnime{
+        font-size: 20px;
+    }
+    .news{
+        margin: 50px auto;
+        padding: 30px 20px;
+    }
+    .friends{
+        padding: 30px 20px;
+    }
+    .fish img{
+        width: 200px;
+    }
+    .grid{
+        flex-direction: column;
+    }
+
+    .fish{
+        min-width: 100%;
+    }
+
+    .fish:nth-child(2){
+        margin: 50px auto 55px;
+    }
+
+    .con{
+        margin: 30px auto 35px;
+    }
+
+    .price p{
+        margin: 30px auto 25px;
+    }
+    .annnai{
+        flex-direction: column;
+        justify-content: center;
+    }
+    table{
+        margin: 0 auto;
+        width: 300px;
+    }
+    td{
+        padding: 0.2em;
+    }
+    iframe{
+        margin: 30px auto 0 auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    #page-top img{
+        width: 70px;
+        height: auto;
+    }
+}
