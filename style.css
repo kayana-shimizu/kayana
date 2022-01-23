@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Serif JP', serif;
+    color: #002a5b;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #002a5b;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+}
+
+/*--------top--------*/
+#slider {
+    width: 100%;
+    height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+h2{
+    margin: 150px 0 100px 0;
+    
+}
+h3{
+    letter-spacing: 1.5em;
+}
+
+.glowAnime span{opacity: 0;}
+
+/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
+.glowAnime.glow span{ animation:glow_anime_on 1s ease-out forwards; }
+
+@keyframes glow_anime_on{
+	0% { opacity:0; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
+	50% { opacity:1;text-shadow: 0 0 10px #fff,0 0 15px #fff; }
+	100% { opacity:1; text-shadow: 0 0 0 #fff,0 0 0 #fff;}
+}
+
+.big-bg{
+    position: relative;
+} 
+
+.nav_left{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    top: 5%;
+    left: 60%;
+}
+
+.home_nav_item{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+.glowAnime{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    text-align: center;
+	color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*------header------*/
+#header{
+	height:80px;/*高さ指定*/
+	width:100%;/*横幅指定*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background:rgba(255, 255, 255, .9);
+	color:#002a5b;
+	text-align: center;
+	padding: 20px auto;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.name_logo{
+    text-align: left;
+}
+.name_logo:hover{
+    color: #ff4500;
+    transition: 0.8s;
+}
+.big_name{
+    font-size: 2em;
+}
+.webd{
+    font-size: 1.5em;
+}
+.contents_menu{
+    display: flex;
+}
+.contents_menu_item{
+    list-style: none;
+    font-size: 1.5em;
+    margin-right: 3em;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.contents_menu_item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+.contents_menu_item a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ff4500;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+  }
+.contents_menu_item a:hover::after {
+    transform: scale(1, 1);
+  }
+
+.fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+    
+@keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+    
+
+/*------about------*/ 
+.about.title_background{
+    right: -383px;;
+}
+
+.title_background{
+    font-size: 10em;
+    color: #eaf6fd;
+    text-transform: uppercase;
+    transform-origin:  top left;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 90px;
+    z-index: -10;
+    letter-spacing: 0.2em;
+}
+
+.kao{
+    max-width: 30%;
+    height: auto;
+    box-shadow: 10px 10px 0px 0px rgba(0, 42, 91);
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.name_yoko{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.name_title{
+    font-size: 2em;
+}
+
+.alfa{
+    margin-left: 5px;
+}
+
+.minarai{
+    font-size: 0.75em;
+}
+.syoukai_letter{
+    width: 55%;
+}
+
+.syoukai{
+    margin-top: 30px;
+    line-height: 2em;
+}
+
+.keireki{
+    margin: 50px auto;
+    line-height: 2em;
+}
+h3{
+    margin-bottom: 10px;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #002a5b;
+}
+th{
+    border-left: none;
+    padding: 0 10px;
+}
+td{
+    border-right: none;
+    padding: 0 10px;
+}
+
+.hobby{
+    margin:100px auto 50px auto;
+}
+
+.hobby h3{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.flex img{
+    border-radius: 50%;
+}
+
+.flex_contents{
+    width: 250px;
+    text-align: center;
+}
+
+.hobby_title{
+    font-size: 1.125em;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+.hobby_h3{
+    font-size: 1.5em;
+}
+
+.hobby_contents{
+    width: 200px;
+    text-align: left;
+    margin: auto;
+}
+
+/*------works------*/
+.work_contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto 100px auto;
+}
+
+.work_contents_small{
+    margin: 30px 20px;
+}
+
+.work_contents_small p{
+    margin-top: 10px;
+}
+
+.gallery-list{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+    
+.gallery-list_contents{
+    margin: auto;
+}
+
+.gallery-list_contents p{
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+/*　画像の拡大＋テキスト出現　*/
+
+.zoomInText{/*テキストの基点となる位置を定義*/
+	position: relative;
+}
+
+.zoomInText span.mask{
+	position: relative;
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+	display: block;/*画像をくくるspanタグをブロック要素にする*/
+    line-height: 0;/*行の高さを0にする*/
+    overflow:hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+.zoomInText:hover span.mask::before{/*hoverした時の変化*/
+	content:"";
+	position: absolute;
+	z-index:2;
+	top:10px;
+	left:10px;
+	width: calc(100% - 20px);
+    height: calc(100% - 20px);
+	background:rgba(0,42,91,0.5);/*背景色*/
+}
+
+.zoomInText img{
+	transform: scale(1);
+	filter: blur(0);
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.zoomInText:hover img{/*hoverした時の変化*/
+	transform: scale(1.2);/*拡大の値を変更したい場合はこの数値を変更*/
+	filter: blur(2px);/*ぼかし具合を変更したい場合はこの数値を変更*/
+}
+
+.zoomInText span.cap{
+	opacity:0;
+	transition: .5s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+	position: absolute;
+	z-index:3;/*テキストを前面に出す*/
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;/*テキストの色を変えたい場合はここを修正*/
+    line-height: 1.5;/*行の高さを1.5にする*/
+}
+
+.zoomInText:hover span.cap{/*hoverした時の変化*/
+	opacity:1;
+}
+
+/*-----modal-----*/
+
+.modal-wrappers {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 60px 10px;
+    text-align: center
+  }
+  
+  .modal-wrappers:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+  }
+  
+  .modal-wrappers:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+  }
+  
+  .modal-wrappers::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: ""
+  }
+  
+  .modal-wrappers .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 70%;
+    max-width: 600px;
+    padding: 30px 30px 15px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle
+  }
+  
+  .modal-wrappers .modal-window .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8)
+  }
+  
+  .modal-wrappers .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    color: #95979c!important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0
+  }
+  
+  .modal-wrappers.modal-close:hover {
+    color: #2b2e38!important
+  }
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill img{
+    width: 45%;
+    height: auto;
+    margin: 20px;
+}
+
+/*-----contact-----*/
+
+.contact_page{
+    margin-bottom: 100px;
+}
+form div{
+    margin-bottom: 14px;
+}
+
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background: #fff;
+    border: 1px #002a5b solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 300px;
+}
+
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 8rem;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    line-height: 1;
+    background-color: #eaf6fd;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+input[type="submit"]:hover{
+    background-color: #ff4500;
+}
+
+.contact_page p{
+    margin: 4em auto;
+}
