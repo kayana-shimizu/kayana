@@ -62,8 +62,13 @@ h3{
 .home_nav .home_nav_item{
     list-style: none;
     text-decoration: none;
+    
+}
+
+.home_nav_item a{
     color: #fff;
     font-size: 1.5em;
+    margin-right: 1em;
 }
 
 .glowAnime{
@@ -168,6 +173,7 @@ h3{
     text-transform: uppercase;
     transform-origin:  top left;
     transform: rotate(90deg);
+    position: fixed;
     top: 90px;
     z-index: -10;
     letter-spacing: 0.2em;
