@@ -460,7 +460,7 @@ td{
 /*-----contact-----*/
 
 .contact_page{
-    margin-bottom: 100px;
+    margin: auto auto auto 100px;
 }
 form div{
     margin-bottom: 14px;
