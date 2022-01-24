@@ -80,7 +80,7 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
         $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
     });
 
-	/*ハンバーガー2*/ 
+/*ハンバーガー2*/ 
 $(".openbtn2").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active2');//ボタン自身に activeクラスを付与し
 	$("#g-nav2").toggleClass('panelactive2');//ナビゲーションにpanelactiveクラスを付与

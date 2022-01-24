@@ -164,7 +164,7 @@ h3{
 
 /*------about------*/ 
 .title_background{
-    right: -383px;;
+    right: -383px;
 }
 
 .title_background{
@@ -208,7 +208,7 @@ h3{
     font-size: 0.75em;
 }
 .syoukai_letter{
-    width: 60%;
+    margin-left: 20px;
 }
 
 .syoukai{
@@ -514,6 +514,8 @@ input[type="submit"]:hover{
 /*----------モバイル版----------*/
 
 @media (max-width: 768px){
+
+   
        /*========= ナビゲーションのためのCSS ===============*/
 
        #g-nav{
@@ -640,8 +642,6 @@ input[type="submit"]:hover{
 
 
 
-
-
 /*========= ナビゲーションのためのCSS ===============*/
 
 #g-nav2{
@@ -698,7 +698,7 @@ input[type="submit"]:hover{
 }
 
 #g-nav2 li a{
-    color: #002a5b;
+    color: #fff;
     text-decoration: none;
     padding:10px;
     display: block;
@@ -709,23 +709,23 @@ input[type="submit"]:hover{
 /*========= ボタンのためのCSS ===============*/
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn2{
-position:fixed;
-cursor: pointer;
-top: 5%;
-left: 10%;
-width: 50px;
-height:50px;
-border-radius: 5px;
+    position:fixed;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height:50px;
+    border-radius: 5px;
 }
 /*ボタン内側*/
 .openbtn2 span{
-display: inline-block;
-transition: all .4s;/*アニメーションの設定*/
-position: absolute;
-left: 14px;
-height: 3px;
-border-radius: 2px;
-background: #002a5b;
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #000;
 }
 
 
@@ -764,5 +764,30 @@ transform: translateY(-6px) rotate(135deg);
 width: 30%;
 }
 
+/*--------ハンバーガーここまで---------*/
+
+body{
+    font-size: 14px;
+}
+
+.top_nav_item{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgbox,.name_bigtitle{
+    margin: auto;
+}
+
+.flex{
+    flex-direction: column;
+}
+.flex_contents{
+    margin: auto;
+}
 
 }
