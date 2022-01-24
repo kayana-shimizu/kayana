@@ -50,12 +50,13 @@ h3{
     position: relative;
 } 
 
-.nav_left{
+.home_nav{
     display: flex;
     position: absolute;
     text-decoration: none;
     top: 5%;
     left: 60%;
+    color: #fff;
 }
 
 .home_nav_item{
