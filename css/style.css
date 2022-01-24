@@ -50,20 +50,23 @@ h3{
     position: relative;
 } 
 
-.home_nav{
-    display: flex;
+.nav_left{
     position: absolute;
     text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
     top: 5%;
     left: 60%;
-    color: #fff;
+}
+
+.home_nav{
+    display: flex;
 }
 
 .home_nav_item{
     list-style: none;
     text-decoration: none;
-    color: #fff;
-    font-size: 1.5em;
+   
 }
 .glowAnime{
     font-family: 'Dancing Script', cursive;
