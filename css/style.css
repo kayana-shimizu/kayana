@@ -357,7 +357,7 @@ td{
     left: 50%;
 	transform: translate(-50%,-50%);
 	color: #fff;/*テキストの色を変えたい場合はここを修正*/
-    line-height: 1.5;/*行の高さを1.5にする*/
+    line-height: 1.25;/*行の高さを1.5にする*/
 }
 
 .zoomInText:hover span.cap{/*hoverした時の変化*/
@@ -508,4 +508,131 @@ input[type="submit"]:hover{
 
 .contact_page p{
     margin: 4em auto;
+}
+
+
+/*-----モバイル版-----*/
+@media (max-width: 768px){
+       /*========= ナビゲーションのためのCSS ===============*/
+
+       #g-nav{
+        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+        position:fixed;
+        z-index: -1;
+        opacity: 0;/*はじめは透過0*/
+        /*ナビの位置と形状*/
+        top:0;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background:#002a5b;
+        /*動き*/
+        transition: all 0.3s;
+    }
+
+    /*アクティブクラスがついたら透過なしにして最前面ßへ*/
+    #g-nav.panelactive{
+        opacity: 1;
+        z-index:999;
+    }
+
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list{
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;/*表示する高さ*/
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        flex-direction: column;
+        /* display: none; */
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+     #g-nav.panelactive ul {
+        display: block;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li{
+        list-style: none;
+        text-align: center; 
+    }
+
+    #g-nav li a{
+        color: #fff;
+        text-decoration: none;
+        padding:10px;
+        display: block;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+	position:fixed;
+	cursor: pointer;
+    top: 5%;
+    left: 10%;
+    width: 50px;
+    height:50px;
+	border-radius: 5px;
+}
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background: #fff;
+  }
+
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+  	width: 45%;
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+  	width: 35%;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+  	width: 20%;
+}
+
+/*activeクラスが付与されると線が回転して×になる*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 30%;
+}
+
 }
