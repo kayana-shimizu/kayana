@@ -17,7 +17,7 @@ a{
 }
 
 .wrapper{
-    width: 1100px;
+    width: 90%;
     margin: auto;
     position: relative;
 }
@@ -192,7 +192,7 @@ h3{
 
 .profile{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .name_yoko{
@@ -212,7 +212,8 @@ h3{
     font-size: 0.75em;
 }
 .syoukai_letter{
-    margin-left: 50px;
+    margin-left: 65px;
+    width: 70%;
 }
 
 .syoukai{
@@ -518,104 +519,8 @@ input[type="submit"]:hover{
 /*----------モバイル版----------*/
 @media (max-width: 768px){
 
-<<<<<<< Updated upstream
     
 /*----------ハンバーガーアイコン----------*/
-=======
-   
-       /*========= ナビゲーションのためのCSS ===============*/
-
-       #g-nav{
-        /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
-        position:fixed;
-        z-index: -1;
-        opacity: 0;/*はじめは透過0*/
-        /*ナビの位置と形状*/
-        top:0;
-        left: 0;
-        width:100%;
-        height: 100vh;/*ナビの高さ*/
-        background:rgba(0, 42, 91, .9);
-        /*動き*/
-        transition: all 0.3s;
-    }
-
-    /*アクティブクラスがついたら透過なしにして最前面ßへ*/
-    #g-nav.panelactive{
-        opacity: 1;
-        z-index:999;
-    }
-
-    /*ナビゲーションの縦スクロール*/
-    #g-nav.panelactive #g-nav-list{
-        /*ナビの数が増えた場合縦スクロール*/
-        position: fixed;
-        z-index: 999;
-        width: 100%;
-        height: 100vh;/*表示する高さ*/
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /*ナビゲーション*/
-    #g-nav ul {
-        flex-direction: column;
-        /* display: none; */
-        /*ナビゲーション天地中央揃え*/
-        position: absolute;
-        z-index: 999;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-    }
-
-     #g-nav.panelactive ul {
-        display: block;
-    }
-
-    /*リストのレイアウト設定*/
-
-    #g-nav li{
-        list-style: none;
-        text-align: center; 
-    }
-
-    #g-nav li a{
-        color: #fff;
-        text-decoration: none;
-        padding:10px;
-        display: block;
-        letter-spacing: 0.1em;
-        font-weight: bold;
-    }
-
-    /*========= ボタンのためのCSS ===============*/
-    /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
-.openbtn{
-	position:fixed;
-	cursor: pointer;
-    top: 5%;
-    left: 10%;
-    width: 50px;
-    height:50px;
-	border-radius: 5px;
-}
-/*ボタン内側*/
-.openbtn span{
-    display: inline-block;
-    transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-	background: #eaf6fd;
-  }
-
-
-.openbtn span:nth-of-type(1) {
-	top:15px;	
-  	width: 45%;
-}
->>>>>>> Stashed changes
 
 .contents_menu_item{
     margin: auto;
@@ -753,6 +658,13 @@ input[type="submit"]:hover{
 
 /*--------ハンバーガーここまで---------*/
 
+.webd{
+    text-align: right;
+}
+
+.name_logo{
+    text-align: right;
+}
 .wrapper{
     width: 320px;
 }
@@ -787,6 +699,9 @@ body{
 }
 .flex_contents{
     margin-bottom: 30px;
+}
+.flex img{
+    width: 65%;
 }
 /*-----work-----*/
 .work_contents,.gallery-list,.skill{
