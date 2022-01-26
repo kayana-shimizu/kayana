@@ -22,7 +22,7 @@ a{
     position: relative;
 }
 
-/*--------top--------*/
+/*-------------top--------------*/
 #slider {
     width: 100%;
     height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
@@ -54,7 +54,7 @@ h3{
 .nav_left{
     position: absolute;
     top: 5%;
-    left: 60%;
+    right: 0;
 }
 .nav_left .home_nav{
     display: flex;
@@ -84,7 +84,7 @@ h3{
     transform: translate(-50%,-50%);
 }
 
-/*------header------*/
+/*-----------header-----------*/
 #header,.top_nav_item{
 	height:80px;/*高さ指定*/
 	width:100%;/*横幅指定*/
@@ -164,7 +164,7 @@ h3{
 }
     
 
-/*------about------*/ 
+/*-----------about-----------*/ 
 .title_background{
     position: absolute;
     top: 5%;
@@ -282,7 +282,7 @@ td{
     margin: auto;
 }
 
-/*------works------*/
+/*----------works----------*/
 .work_contents{
     display: flex;
     flex-wrap: wrap;
@@ -368,7 +368,7 @@ td{
 	opacity:1;
 }
 
-/*-----modal-----*/
+/*----------modal----------*/
 
 .modal-wrappers {
     z-index: 999;
@@ -461,7 +461,7 @@ td{
     margin: 20px;
 }
 
-/*-----contact-----*/
+/*----------contact----------*/
 
 .contact_page{
     margin: auto auto auto 100px;
@@ -521,6 +521,9 @@ input[type="submit"]:hover{
     
 /*----------ハンバーガーアイコン----------*/
 
+.contents_menu_item{
+    margin: auto;
+}
 .nav_left .home_nav{
     flex-direction: column;
 }
@@ -538,7 +541,7 @@ input[type="submit"]:hover{
 	transition: all 0.6s;
 }
 
-.g-nav-list{
+#g-nav.nav_blue{
     background-color: #eaf6fd;
 }
 .nav_blue .contents_menu{
@@ -589,6 +592,9 @@ input[type="submit"]:hover{
 	font-weight: bold;
 }
 
+#g-nav.nav_blue li a{
+    color: #002a5b;
+}
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
