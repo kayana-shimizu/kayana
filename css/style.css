@@ -518,6 +518,7 @@ input[type="submit"]:hover{
 /*----------モバイル版----------*/
 @media (max-width: 768px){
 
+    
 /*----------ハンバーガーアイコン----------*/
 
 .nav_left .home_nav{
@@ -611,7 +612,7 @@ input[type="submit"]:hover{
   	width: 45%;
   }
 
-  .navy_line span{
+.navy_line span{
       background-color: #002a5b;
   }
 .openbtn span:nth-of-type(1) {
@@ -657,6 +658,10 @@ body{
     font-size: 14px;
 }
 
+#header
+{
+    justify-content: center;
+}
 /*-----about-----*/
 .top_nav_item{
     display: flex;
