@@ -638,10 +638,10 @@ input[type="submit"]:hover{
 
 /*-------------ハンバーガー2---------------*/
 
-.nav_left .home_nav{
+.contents_menu{
     flex-direction: column;
 }
-#g-nav{
+#g-nav2{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
     z-index: 999;
@@ -656,13 +656,13 @@ input[type="submit"]:hover{
 }
 
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
+#g-nav2 .panelactive2{
     left: 0;
 }
 
 
 /*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
+#g-nav2 .panelactive2 #g-nav-list2{
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999; 
@@ -673,7 +673,7 @@ input[type="submit"]:hover{
 }
 
 /*ナビゲーション*/
-#g-nav ul {
+#g-nav2 ul {
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
@@ -684,12 +684,12 @@ input[type="submit"]:hover{
 
 /*リストのレイアウト設定*/
 
-#g-nav li{
+#g-nav2 li{
 	list-style: none;
     text-align: center; 
 }
 
-#g-nav li a{
+#g-nav2 li a{
 	color: #fff;
 	text-decoration: none;
 	padding:10px;
@@ -700,7 +700,7 @@ input[type="submit"]:hover{
 }
 
 /*========= ボタンのためのCSS ===============*/
-.openbtn{
+.openbtn2{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
 	top:10px;
@@ -711,44 +711,44 @@ input[type="submit"]:hover{
 }
 	
 /*×に変化*/	
-.openbtn span{
+.openbtn2 span{
     display: inline-block;
     transition: all .4s;
     position: absolute;
     left: 14px;
     height: 3px;
     border-radius: 2px;
-	background-color: #eaf6fd;
+	background-color: #002a5b;
   	width: 45%;
   }
 
-.openbtn span:nth-of-type(1) {
+.openbtn2 span:nth-of-type(1) {
 	top:15px;
     width: 45%;
 }
 
-.openbtn span:nth-of-type(2) {
+.openbtn2 span:nth-of-type(2) {
 	top:23px;
     width: 35%;
 }
 
-.openbtn span:nth-of-type(3) {
+.openbtn2 span:nth-of-type(3) {
 	top:31px;
     width: 20%;
 }
 
-.openbtn.active span:nth-of-type(1) {
+.openbtn2.active2 span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-135deg);
     width: 30%;
 }
 
-.openbtn.active span:nth-of-type(2) {
+.openbtn2.active2 span:nth-of-type(2) {
 	opacity: 0;
 }
 
-.openbtn.active span:nth-of-type(3){
+.openbtn2.active2 span:nth-of-type(3){
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(135deg);

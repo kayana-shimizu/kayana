@@ -79,3 +79,16 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
+
+
+/*ハンバーガー2*/ 
+$(".openbtn2").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active2');//ボタン自身に activeクラスを付与し
+    $("#g-nav2").toggleClass('panelactive2');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$("#g-nav2 a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".openbtn2").removeClass('active2');//ボタンの activeクラスを除去し
+    $("#g-nav2").removeClass('panelactive2');//ナビゲーションのpanelactiveクラスも除去
+});
