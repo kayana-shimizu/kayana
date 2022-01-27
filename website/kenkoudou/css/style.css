@@ -28,7 +28,6 @@ img{
 .wrapper{
     max-width: 95%;
     margin: 0 auto;
-    padding: 0 50px;
     overflow: hidden;
     position: relative;
 }
@@ -333,6 +332,9 @@ footer p{
     }
     .home-logo{
         margin: 1.5em auto;
+    }
+    .naviga{
+        padding-left: 0;
     }
     .setumei{
         width: 90%;
