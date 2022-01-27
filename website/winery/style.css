@@ -81,9 +81,10 @@ nav{
     position: absolute;
     color: #fff;
     font-weight: bold;
-    letter-spacing: 0.2em;
-    font-size: 3.5em;
-    top: 35%;
+    letter-spacing: 0.5em;
+    line-height: 1.3em;
+    font-size: 3em;
+    top: 30%;
     left:50%
 }
 /* 上下のアニメーション*/
@@ -205,13 +206,19 @@ nav{
 }
 .grid{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
 }
 .guide{
-    width: 370px;
     text-align: left;
+    margin: 10px;
 }
 
+.guide img{
+    width: 300px;
+    height: auto;
+}
 .guide span{
     display: block;
     color: #5a1b84;
@@ -221,6 +228,9 @@ nav{
 }
 .guide p{
     line-height: 1.5em;
+}
+.grid:last-of-type{
+    margin: 0;
 }
 
 /*wine*/
@@ -236,6 +246,7 @@ nav{
     background-position: center;
     color: #5a1b84;
     font-size: 2em;
+    width: 95%;
 }
 
 .yokonarabi img{
@@ -248,6 +259,7 @@ nav{
     justify-content: space-around;
     align-items: bottom;
     margin-top: 45px;
+    width: 95%;
     padding: 0;
 }
 
@@ -266,7 +278,7 @@ nav{
 }
 
 .location-map{
-    height: 500px;
+    width: 100%;
 }
 /*footer*/
 footer{
@@ -315,16 +327,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     color: #fff;
     background: #5a1b84;
     border-radius: 50%;
     text-align: center;
     line-height: 1.5;
     position: fixed;
-    right: 20px;
-    bottom: 80px;
+    right: 5px;
+    bottom: 15px;
     z-index: 500;
   }
 
@@ -362,7 +374,7 @@ footer{
     }
 
     .slide-in{
-        font-size: 1.1em;
+        font-size: 1.3em;
         line-height: 1.5em;
         font-weight: bold;
     }
@@ -381,6 +393,11 @@ footer{
 
     iframe{
         width: fit-content;
+    }
+
+    .yokonarabi img{
+        width: 40px;
+        height: auto;
     }
     /*========= ナビゲーションのためのCSS ===============*/
 
@@ -502,6 +519,13 @@ footer{
     .yokonarabi img{
         width: 30px;
         height: auto;
+    }
+
+    .footnav a{
+        width: 4.5em;
+    }
+    .slide-in{
+        top: 20%;
     }
 
 }
