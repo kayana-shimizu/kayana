@@ -185,6 +185,7 @@ h3{
 
 .kao img{
     object-fit: cover;
+    vertical-align: center;
 }
 .kao{
     box-shadow: 10px 10px 0px 0px rgba(0, 42, 91);
@@ -213,7 +214,7 @@ h3{
 }
 .syoukai_letter{
     margin-left: 65px;
-    width: 70%;
+    width: 40em;
 }
 
 .syoukai{
@@ -289,6 +290,7 @@ td{
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto 100px auto;
+    width: 85%;
 }
 
 .work_contents_small{
@@ -454,12 +456,14 @@ td{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
 }
 
 .skill img{
     width: 45%;
     height: auto;
-    margin: 20px;
+    margin-bottom: 20px;
+
 }
 
 /*----------contact----------*/
