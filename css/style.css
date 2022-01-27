@@ -527,6 +527,9 @@ input[type="submit"]:hover{
     
 /*----------ハンバーガーアイコン----------*/
 
+.home_nav_item a{
+    margin-right: 0;
+}
 .contents_menu_item{
     margin: auto;
 }
@@ -586,6 +589,7 @@ input[type="submit"]:hover{
 #g-nav li{
 	list-style: none;
     text-align: center; 
+    margin: 10px auto;
 }
 
 #g-nav li a{
