@@ -26,7 +26,7 @@ img{
 } 
 
 .wrapper{
-    max-width: 1300px;
+    max-width: 95%;
     margin: 0 auto;
     padding: 0 50px;
     overflow: hidden;
@@ -450,7 +450,7 @@ footer p{
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: bold;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 /*========= ボタンのためのCSS ===============*/

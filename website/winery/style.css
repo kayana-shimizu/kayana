@@ -21,7 +21,7 @@ img{
 }
 
 .wrapper{
-    max-width: 1200PX;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -82,8 +82,8 @@ nav{
     color: #fff;
     font-weight: bold;
     letter-spacing: 0.2em;
-    font-size: 4em;
-    top: 40%;
+    font-size: 3.5em;
+    top: 35%;
     left:50%
 }
 /* 上下のアニメーション*/
@@ -362,16 +362,16 @@ footer{
     }
 
     .slide-in{
-        font-size: 1.4em;
+        font-size: 1.1em;
         line-height: 1.5em;
-       font-weight: 900;
+        font-weight: bold;
     }
 
     .main-nav a{
         display: flex;
         flex-direction: column;
         border: none;
-        font-size: 2em;
+        font-size: 1.5em;
         padding-bottom: 2.5em;
     }
 
