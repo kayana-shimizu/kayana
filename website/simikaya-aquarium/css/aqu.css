@@ -230,7 +230,7 @@ td{
 .annnai{
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 iframe{
