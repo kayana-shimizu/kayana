@@ -213,12 +213,13 @@ nav{
 .guide{
     text-align: left;
     margin: 10px;
+    width: 300px;
 }
 
 .guide img{
-    width: 300px;
+    width: 100%;
     height: auto;
-}
+} 
 .guide span{
     display: block;
     color: #5a1b84;
@@ -366,6 +367,9 @@ footer{
         margin-bottom: 70px;
     }
 
+    .guide img{
+        margin: auto;
+    }
     .flex a{
         text-align: center;
     }
@@ -375,7 +379,7 @@ footer{
 
     .slide-in{
         font-size: 1.3em;
-        line-height: 1.5em;
+        line-height: 1.3em;
         font-weight: bold;
     }
 
