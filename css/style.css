@@ -302,7 +302,6 @@ td{
 }
 
 .gallery-list{
-    height: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -722,11 +721,11 @@ body{
 .work_contents{
     margin: auto 1em;
 }
-.gallery-list{
+/* .gallery-list{
     margin: 300px 1em;
-}
+} */
 .gallery-list_contents{
-    margin: 25px auto;
+    margin: 25px;
 }
 .gallery-list_contents img{
     width: 100%;

@@ -395,6 +395,9 @@ footer p{
     
     /*========= ナビゲーションのためのCSS ===============*/
 
+    .naviga{
+        width: 4.5em;
+    }
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
