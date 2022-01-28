@@ -174,7 +174,6 @@ header{
     margin-bottom: 170px;
 }
 .syuruisetumei p{
-    width: 80%;
     margin: auto;
 }
 
@@ -336,6 +335,9 @@ footer p{
     body{
         font-size: 14px;
     }
+    .wrapper{
+        width: 90%;
+    }
     .main-nav,.flex,.animlcontent, .animlcontent2,.footflex{
         flex-direction: column;
     }
@@ -350,6 +352,7 @@ footer p{
         flex-direction: column;
         justify-content: center;
         margin: auto;
+        padding: 0;
     }
     .setumei img{
         margin: auto;
@@ -392,20 +395,15 @@ footer p{
    .syuruisetumei:first-of-type{
        margin-top: 90px;
    }
-    .syuruisetumei img{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .animalsyoukai{
-        margin: auto;
-    }
     .animalsyoukai img{
         width: 70%;
-        margin: auto;
     }
     .setumeicenter{
         width: 90%;
         margin: auto;
+    }
+    .animlcontent,.animlcontent2{
+        text-align: center;
     }
     form{
         margin-left: 0;
@@ -434,6 +432,9 @@ footer p{
         border-right:none;
     }
     
+    #contact{
+        margin-top: 0;
+    }
     
     /*========= ナビゲーションのためのCSS ===============*/
 
