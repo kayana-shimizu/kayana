@@ -385,21 +385,25 @@ footer img{
     .price p{
         margin: 30px auto 25px;
     }
+
     .annnai{
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
-    table{
+    th,td,table span{
         margin: 0 auto;
-        width: 300px;
+        font-size: 0.9em;
     }
     td{
         padding: 0.2em;
     }
+    table{
+        margin: auto;
+    }
     iframe{
         margin: 30px auto 0 auto;
-        max-width: 300px;
-        max-height: 300px;
+        min-width: 300px;
     }
 
     #page-top img{
