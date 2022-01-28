@@ -26,9 +26,8 @@ img{
 } 
 
 .wrapper{
-    max-width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
     overflow: hidden;
     position: relative;
 }
@@ -146,16 +145,21 @@ header{
 /*syuruisetumei*/
 .content{
     display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
-.content img{
-    width: 570px;
+.syasinn{
+    width: 50%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 .content p{
     font-weight: bold;
     font-size: 2.38em;
+    margin: 0;
 }
+
 .daimei{
     font-size: 2.8em;
     margin-bottom: 55px;
@@ -168,6 +172,10 @@ header{
 }
 .syuruisetumei{
     margin-bottom: 170px;
+}
+.syuruisetumei p{
+    width: 80%;
+    margin: auto;
 }
 
 /*animal*/
@@ -334,6 +342,9 @@ footer p{
     .home-logo{
         margin: 1.5em auto;
     }
+    .naviga{
+        padding-left: 0;
+    }
     .setumei{
         width: 90%;
         flex-direction: column;
@@ -360,6 +371,22 @@ footer p{
     }
     .flex span{
         margin-bottom: 10px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .daimei, .big p{
+        margin: auto;
+    }
+    .big{
+        margin: auto;
+    }
+    .daimei{
+        margin-bottom: 5px;
+    }
+
+    .syasinn{
+        margin: 10px auto;
     }
     .syuruisetumei{
         margin-bottom: 50px;

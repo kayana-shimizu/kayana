@@ -20,10 +20,10 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/top1.jpg' },
-				{ src: './img/top2.jpg' },
-				{ src: './img/top3.jpg' },
-				{ src: './img/top4.jpg' }
+				{ src: './img/top1-2.jpg' },
+				{ src: './img/top2-2.jpg' },
+				{ src: './img/top3-2.jpg' },
+				{ src: './img/top4-2.jpg' }
 			];
 		}
 
