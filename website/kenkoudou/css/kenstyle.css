@@ -374,30 +374,39 @@ footer p{
     }
     .content{
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .daimei, .big p{
-        margin: auto;
-    }
-    .big{
         margin: auto;
     }
     .daimei{
         margin-bottom: 5px;
     }
-
+    .big{
+        margin: 15px auto;
+    }
+    .daimei{
+        margin-bottom: 5px;
+    }
     .syasinn{
         margin: 10px auto;
     }
     .syuruisetumei{
         margin-bottom: 50px;
+        text-align: center;
     }
    .syuruisetumei:first-of-type{
-       margin-top: 100px;
+       margin-top: 90px;
    }
     .syuruisetumei img{
-        width: 50%;
+        width: 100%;
+        margin: 0 auto;
     }
     .animalsyoukai{
+        margin: auto;
+    }
+    .setumeicenter{
+        width: 90%;
         margin: auto;
     }
     form{
