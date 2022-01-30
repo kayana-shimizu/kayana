@@ -22,6 +22,9 @@ a{
     position: relative;
 }
 
+footer{
+    margin-left: 20px;
+}
 /*-------------top--------------*/
 #slider {
     width: 100%;
@@ -82,6 +85,14 @@ h3{
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+.top_footer{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    color: #fff;
+    transform: translate(-1%,-1%);
 }
 
 /*-----------header-----------*/
@@ -518,6 +529,10 @@ input[type="submit"]:hover{
     margin: 4em auto;
 }
 
+footer{
+    margin-top: 50px;
+}
+
 
 /*----------モバイル版----------*/
 @media (max-width: 768px){
@@ -710,6 +725,9 @@ body{
     width: 65%;
 }
 /*-----work-----*/
+.works_title{
+    margin-top: 100px;
+}
 .work_contents,.gallery-list,.skill{
     flex-direction: column;
 }
@@ -743,7 +761,7 @@ body{
 /*-----contact-----*/
 
 .contact_page{
-    margin: auto 1em 30px 1em;
+    margin: auto 1em 10em 1em;
 }
 
 }
