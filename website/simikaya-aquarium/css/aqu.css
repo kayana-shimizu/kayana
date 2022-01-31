@@ -29,7 +29,6 @@ img{
 .wrapper{
     max-width: 70%;
     margin: 0 auto;
-    padding: 0 30px;
     overflow: hidden;
     position: relative;
 }
@@ -120,11 +119,13 @@ header{
 
 /*news*/
 .news{
-    padding: 35px 20px 35px;
     line-height: normal;
     margin: 100px auto 50px auto;
 }
-
+.news ul{
+    width: 90%;
+    margin: auto;
+}
 .news li{
     margin-top: 30px;
 }
@@ -142,20 +143,21 @@ li p{
 }
 
 .news a{
-    font-size: 1em;
+    font-size: 1.125em;
 }
 
 
 /*friends*/
 
 .friends{
-    padding: 30px 20px 20px;
+    /* padding: 30px 20px 20px; */
     margin-bottom: 50px;
 }
 
 .con{
     margin: 35px auto 55px;
     font-size: normal;
+    width: 90%;
 }
 
 .content{
@@ -166,6 +168,8 @@ li p{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
     /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
 }
 
@@ -186,22 +190,18 @@ li p{
 
 /*price*/
 .price{
-    padding: 30px 20px 25px;
+    /* padding: 30px 20px 25px; */
     line-height: normal;
     margin-bottom: 50px;
 }
 
-.price p{
-    margin: 35px auto 20px;
-}
-
 table{
     border-collapse: collapse;
-    margin:auto auto 50px auto;
+    margin:auto;
 }
 
 table span{
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 caption{
@@ -234,7 +234,13 @@ td{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* overflow: hidden; */
+    width: 90%;
+    margin: auto;
+}
+
+.price p{
+    width: 90%;
+    margin: 10px auto;
 }
 
 iframe{
@@ -245,7 +251,7 @@ iframe{
 /*contact*/
 
 form{
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
 }
 form div{
@@ -340,10 +346,16 @@ footer img{
 
 
 /*--------モバイル版--------*/
-@media (max-width: 600px){
+@media (max-width: 768px){
 
     body{
         font-size: 14px;
+    }
+    .wrapper{
+        width: 97%;
+    }
+    .news, .friends, .price{
+        padding: 0;
     }
     .page-header{
         flex-direction: column;
@@ -364,20 +376,13 @@ footer img{
     }
     .news{
         margin: 50px auto;
-        padding: 30px 20px;
-    }
-    .friends{
-        padding: 30px 20px;
     }
     .fish img{
-        width: 200px;
+        width: 100%;
+        margin: 0 auto;
     }
     .grid{
         flex-direction: column;
-    }
-
-    .fish{
-        min-width: 100%;
     }
 
     .fish:nth-child(2){
@@ -395,10 +400,9 @@ footer img{
     .annnai{
         flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
     th,td,table span{
-        margin: 0 auto;
+        /* margin: 0 auto; */
         font-size: 0.9em;
     }
     td{
