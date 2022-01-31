@@ -197,7 +197,6 @@ li p{
 
 table{
     border-collapse: collapse;
-    margin:auto;
 }
 
 table span{
@@ -212,7 +211,7 @@ caption{
 th,td{
     width: 6em;
     height: 3em;
-    padding: 0.5em;
+    padding: 0.5em 0;
     font-size: 1.125em;
 }
 th{
@@ -399,17 +398,17 @@ footer img{
 
     .annnai{
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
     }
-    th,td,table span{
-        /* margin: 0 auto; */
-        font-size: 0.9em;
-    }
-    td{
-        padding: 0.2em;
+    th span,td span{
+        font-size: 0.5em;
     }
     table{
-        margin: auto;
+        width: 100%; 
+    }
+    th,td{
+        padding: 0;
+        font-size: 0.75em;
     }
     iframe{
         margin: 30px auto 0 auto;
