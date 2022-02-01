@@ -148,6 +148,9 @@ header{
     justify-content: center;
     margin-bottom: 50px;
 }
+.content img{
+    width: 50%;
+}
 .syasinn{
     width: 50%;
     height: auto;
@@ -174,7 +177,8 @@ header{
     margin-bottom: 170px;
 }
 .syuruisetumei p{
-    margin: auto;
+    margin: 10px auto;
+    text-align: left;
 }
 
 /*animal*/
@@ -378,6 +382,10 @@ footer p{
     .content{
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    .content img{
+        width: 90%;
+        margin: auto;
     }
     .big{
         margin: 15px auto;
