@@ -325,8 +325,8 @@ td{
 .gallery-list_contents p{
     margin: 20px auto;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.125em;
+    /* font-weight: bold;
+    font-size: 1.125em; */
 }
 
 /*　画像の拡大＋テキスト出現　*/
