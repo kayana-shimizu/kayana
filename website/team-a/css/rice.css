@@ -1,0 +1,676 @@
+@charset "utf-8";
+@import url(common.css);
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    padding-bottom: 187px;
+    background-image: url(../images/paper.jpg);
+    background-repeat: repeat;
+}
+
+body {
+    background-image: url(../images/paper.jpg);
+    background-repeat: repeat;
+}
+
+/* メインビジュアル
+----------------------------------- */
+.rice-main {
+    min-height: 100vh;
+    background-image: url(../images/rice-main.jpg);
+    background-blend-mode: lighten;
+    padding-top: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.87);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.main-content h2 {
+    font-size: 3.625em;
+    margin-left: 42px;
+    font-weight: normal;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+
+.main-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.main-content2 {
+    padding: 24px;
+}
+
+.main-content p {
+    line-height: 2.2em;
+    font-size: 18px;
+}
+
+.rice-left p{
+    line-height: 2em;
+    font-size: 18px;
+}
+
+/* お米の紹介中身
+------------------------------- */
+.rice-content {
+    padding: 190px 0 0;
+}
+
+.rice-1,
+.rice-2,
+.rice-3,
+.rice-4 {
+    padding: 40px 0;
+}
+
+.rice-under p:first-of-type {
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.rice-under p:nth-of-type(3) {
+    margin-top: 38px;
+}
+
+.under-img1 {
+    width: 30%;
+    object-fit: contain;
+}
+
+.under-img2 {
+    display: none;
+}
+
+.rice-content section h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.taste {
+    width: 86px;
+    height: 86px;
+}
+
+.taste-container {
+    display: flex;
+    align-items: center;
+}
+
+.taste:first-of-type {
+    margin-right: 16px;
+}
+
+.h3-container {
+    display: flex;
+    padding-left: 66px;
+    align-items: center;
+}
+
+.rice-under {
+    display: flex;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+
+.h3-line {
+    content: "";
+    max-width: 349px;
+    height: 1px;
+    background: #088300;
+    margin-top: 18px;
+}
+
+.h3-line2 {
+    content: "";
+    max-width: 349px;
+    height: 1.5px;
+    background: #088300;
+    margin-left: 128px;
+    margin-top: 10px;
+}
+
+.ranking {
+    border: 3px solid #B72525;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: #B72525;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+/* タブの切り替え
+---------------------------------- */
+.main-area {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2px;
+}
+
+.tab-menu {
+    width: 98px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    background-color: #fff;
+    cursor: pointer;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-size: 1.3em;
+    height: 120px;
+    line-height: 1.2em;
+    border-top-right-radius: 22px;
+    -webkit-border-top-right-radius: 22px;
+    -moz-border-radius-topright: 22px;
+    border-bottom-right-radius: 22px;
+    -webkit-border-bottom-right-radius: 22px;
+    -moz-border-radius-bottomright: 22px;
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    font-weight: bold;
+}
+
+.tab-menu.is-active {
+    background-color: #fa7644;
+    color: #fff;
+    border: 3px solid #fa7644;
+}
+
+.content-box {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.content-box.is-active {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.buy-secbg {
+    padding: 136px 0 169px;
+}
+
+/* お客様の声ここから
+------------------------------------ */
+
+.voice-h2-container {
+    text-align: center;
+}
+
+.voice h2 {
+    font-size: 4em;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.voice h2:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 50%;
+    width: 132px;
+    height: 4px;
+    -moz-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    background-color: #FA7644;
+}
+
+.voice-content1 img,
+.voice-content img {
+    width: 20%;
+    object-fit: contain;
+}
+
+.fukidashi {
+    background-image: url(../images/voice-rice.gif);
+    width: 70%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-position: center center;
+}
+
+.fukidashi p {
+    margin: 0 auto;
+    font-size: 1.125em;
+    width: 68%;
+    padding-left: 30px;
+}
+
+.fukidashi p span {
+    display: inline-block;
+    margin-bottom: 0.75em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.voice-content1 {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.voice-content {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.grad-btn {
+    background: #FA7644;
+    width: 280px;
+    padding: 0.5em 0;
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+.grad-btn::before {
+    content: "続きを見る↓";
+}
+
+.grad-item {
+    position: relative;
+    overflow: hidden;
+    /* height: 80px; 隠した状態の高さ */
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, #fff 100%);
+    content: "";
+}
+
+.grad-trigger {
+    display: none;
+    /*チェックボックスは常に非表示*/
+}
+
+.grad-trigger:checked~.grad-btn::before {
+    content: "閉じる↑"
+}
+
+.grad-trigger:checked~.grad-item {
+    height: auto;
+}
+
+.grad-trigger:checked~.grad-item::before {
+    display: none;
+}
+
+/* ここからレスポンシブ
+------------------------------- */
+
+@media (max-width: 1080px) {
+
+    /* お客様の声 */
+    .fukidashi {
+        height: 400px;
+    }
+
+    .fukidashi p {
+        font-size: 1em;
+        width: 70%;
+        padding-left: 20px;
+    }
+
+
+    .under-img1 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grad-btn {
+        margin: 0 auto;
+        width: 252px;
+        padding: 8px 0;
+        font-size: 2em;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        display: block;
+        margin-left: auto;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .wrapper {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+
+    .main-content p {
+        font-size: 1.12em;
+        line-height: 1.8em;
+    }
+
+    .rice-left p {
+        font-size: 16px;
+    }
+
+    /* お米の紹介中身 */
+    main {
+        padding-bottom: 100px;
+    }
+    .h3-container {
+        padding-left: 40px;
+    }
+
+    .rice-1,
+    .rice-2,
+    .rice-3,
+    .rice-4 {
+        padding: 10px 0 40px;
+    }
+
+    .h3-line {
+        max-width: 300px;
+    }
+
+    .h3-line2 {
+        max-width: 300px;
+    }
+
+    .rice-main {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 100px 0;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .main-content h2 {
+        font-size: 2.22em;
+        letter-spacing: 0.25em;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .main-content h3 {
+        font-size: 1.8em;
+    }
+
+    .main-content2 {
+        padding: 0;
+        width: 100%;
+    }
+
+    .rice-content section h3 {
+        margin-right: 0;
+    }
+
+    .rice-content {
+        padding-top: 100px;
+    }
+
+    .h3-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .taste {
+        width: 45px;
+        height: auto;
+    }
+
+    .rice-under p:first-of-type {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+
+    .rice-left p:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .rice-left p:nth-of-type(3) {
+        margin-top: 20px;
+    }
+
+    .under-img1 {
+        display: none;
+    }
+
+    .under-img2 {
+        display: block;
+        width: 60%;
+        margin: 4em auto;
+    }
+
+    .rice-under {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .rice-content section h3 {
+        font-size: 3em;
+        width: 100%;
+    }
+
+    /*タブメニュー*/
+    .main-area {
+        flex-direction: column-reverse;
+    }
+
+    .content-box {
+        height: auto;
+    }
+
+    .tab {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tab-menu {
+        width: 25%;
+        font-size: 1em;
+        height: 57px;
+        writing-mode: horizontal-tb;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+        line-height: 1em;
+        border-top-right-radius: 22px;
+        -webkit-border-top-right-radius: 22px;
+        -moz-border-radius-topright: 22px;
+        border-bottom-right-radius: 0px;
+        -webkit-border-bottom-right-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 22px;
+        -webkit-border-top-left-radius: 22px;
+        -moz-border-radius-topleft: 22px;
+        border-bottom-left-radius: 0px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomleft: 0px;
+    }
+
+
+    /* お客様の声 */
+    .fukidashi {
+        background-image: url(../images/30.png);
+        width: 100%;
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    .fukidashi p {
+        width: 80%;
+        font-size: 1em;
+        padding-left: 0;
+    }
+
+    .fukidashi p span {
+        font-size: 1.125em;
+    }
+
+    .voice-content1,
+    .voice-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .voice h2 {
+        font-size: 2.5em;
+    }
+
+    .voice-content1 img,
+    .voice-content img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        padding-bottom: 100px;
+    }
+    .wrapper {
+        padding: 0 13px;
+    }
+
+    .h3-container {
+        padding-left: 20px;
+    }
+
+    .rice-content {
+        padding-top: 100px;
+    }
+
+    .rice-content section h3 {
+        font-size: 2.5em;
+    }
+
+    .under-img2 {
+        width: 70%;
+    }
+
+    .ranking {
+        font-size: 1em;
+    }
+    /* お客様の声 */
+
+    .main-content2 {
+        padding: 0 59px;
+    }
+}
+
+@media (max-width: 414px) {
+    main {
+        padding-bottom: 60px;
+    }
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .main-content2 {
+        padding: 0 10px;
+    }
+
+    .rice-content {
+        padding-top: 60px;
+    }
+
+    .rice-content section h3 {
+        font-size: 2em;
+    }
+
+    .under-img2 {
+        width: 95%;
+    }
+
+    /* お客様の声 */
+    .voice h2 {
+        font-size: 2em;
+    }
+
+    .grad-btn {
+        margin-bottom: 60px;
+    }
+    .fukidashi {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .voice-content1 .fukidashi {
+        margin-top: 60px;
+    }
+}

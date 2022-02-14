@@ -1,0 +1,499 @@
+@charset "utf-8";
+@import url(common.css);
+
+
+
+body {
+  background-image: url(../images/paper.jpg);
+  background-repeat: repeat;
+  /* padding-top: 150px; */
+}
+
+main {
+  width: 100%;
+}
+
+/* loading
+=========================================== */
+
+#loader-bg {
+  background-image: url(../images/paper.jpg);
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+#loader-bg .bouncingLoader {
+  background-image: url(../images/paper.jpg);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.bouncingLoader>div,
+.bouncingLoader:before,
+.bouncingLoader:after {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: #fa7644;
+  margin-bottom: -5px;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncingLoader>div,
+.bouncingLoader:before,
+.bouncingLoader:after {
+  content: "";
+}
+
+.bouncingLoader>div {
+  margin: 0 5px;
+}
+
+.bouncingLoader>div {
+  animation-delay: 0.2s;
+}
+
+.bouncingLoader:after {
+  animation-delay: 0.4s;
+}
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+
+/* .walk-top
+=========================================== */
+.walk-top {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.walk-catch {
+  position: absolute;
+  top: 240px;
+  right: 14%;
+  color: #FFF6F6;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.16);
+  writing-mode: vertical-rl;
+  font-size: 3.4em;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+
+/* .map
+=========================================== */
+main {
+  padding: 0 15px;
+}
+
+.map {
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  max-width: 1500px;
+  margin: 150px auto 150px;
+}
+
+.map-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-box p {
+  margin-top: 10px;
+}
+
+.map-box svg {
+  width: 80%;
+}
+
+.map-right {
+  width: 50%;
+  padding: 100px 55px 55px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.map-text-sp {
+  display: none;
+}
+
+.map-text h2 {
+  writing-mode: vertical-rl;
+  font-size: 3.125em;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+}
+
+.sp-h2 {
+  display: none;
+}
+
+.map-p {
+  padding: 220px 10px 0 0;
+}
+
+.map-p p:first-of-type {
+  font-size: 1.625em;
+  margin-bottom: 1em;
+}
+
+.map-p p:nth-of-type(2) {
+  font-size: 1.375em;
+  padding-right: 2em;
+  line-height: 2em;
+}
+
+.map-imgBox {
+  text-align: center;
+  width: 80%;
+  margin-top: 109px;
+}
+
+.map-imgBox:hover {
+  opacity: 0.6;
+}
+
+.map-imgBox-sp {
+  display: none;
+}
+
+/* 八幡高原地図の<defs><style>タグ */
+.cls-1 {
+  isolation: isolate;
+}
+
+.cls-2 {
+  fill: #b5c4d4;
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+.cls-4 {
+  opacity: 0.35;
+}
+
+.cls-5 {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
+
+.cls-6 {
+  fill: #fa7644;
+}
+
+.cls-7 {
+  font-size: 26px;
+  font-family: TsukuARdGothicStd-B-90ms-RKSJ-H, FOT-TsukuARdGothic Std;
+}
+
+.cls-8,
+.cls-9 {
+  font-size: 24px;
+}
+
+.cls-8 {
+  font-family: TsukuARdGothicStd-R-90ms-RKSJ-H, FOT-TsukuARdGothic Std;
+}
+
+.cls-9 {
+  font-family: TsukuARdGothicStd-R-90ms-RKSJ-H, FOT-TsukuARdGothic Std;
+}
+
+.cls-10 {
+  letter-spacing: -0.5em;
+}
+
+.cls-8:hover,
+.cls-9:hover {
+  fill-opacity: 0.2;
+}
+
+/* .container
+=========================================== */
+
+.item {
+  width: 540px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  padding: 40px 16px;
+}
+
+.item-text {
+  margin-left: 16px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.58em;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+h3 span {
+  display: block;
+  font-size: 0.57em;
+}
+
+.item-text p {
+  line-height: 1.3em;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
+  gap: 20px;
+  padding-bottom: 304px;
+  justify-content: center;
+}
+
+#map-return a {
+  border: 3px solid #FA7644;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: #FA7644;
+  padding: 18px 26px;
+  font-size: 1.125em;
+  background: #fff;
+  transform: translateY(100px);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+#map-return {
+  position: fixed;
+  bottom: 8%;
+  right: 2%;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#map-return.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#map-return.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+
+/* ここからレスポンシブ */
+@media (max-width: 1200px) {
+  .sp-h22 {
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  /* 地図 */
+  .map {
+    background: none;
+    margin: 0;
+  }
+
+  .map-right {
+    display: none;
+  }
+
+  .map-text-sp {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 649px;
+    margin: 30px auto;
+    padding: 49px 40px;
+  }
+
+  .map-text-sp .map-p {
+    padding: 44px 22px 44px 22px;
+  }
+
+  .map-text-sp p:first-child {
+    font-size: 1.37em;
+  }
+
+  .map-p p:nth-of-type(2) {
+    padding-right: 0;
+  }
+
+  .map-text-sp p:last-child {
+    font-size: 1.12em;
+  }
+
+  .map-box {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .map-box img {
+    width: 100%;
+  }
+
+  .map-box p {
+    margin-top: 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .map-imgBox-sp {
+    display: block;
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 138px;
+  }
+
+  .map-imgBox-sp img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  .walk-catch {
+    font-size: 2.8em;
+    right: 20%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .map-box svg {
+    width: 100%;
+  }
+
+
+  .pc-header {
+    display: none;
+  }
+
+  .sp-h2 {
+    display: none;
+  }
+
+  .walk-catch {
+    font-size: 2.5em;
+  }
+
+}
+
+@media (max-width: 540px) {
+  /* 周辺スポット一覧 */
+  .item {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .item-img {
+    margin: 0 auto;
+  }
+
+  .item-text {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  /* 観光協会バナー */
+  .map-imgBox-sp {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 414px) {
+
+  .sp-h2 {
+    display: block;
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+
+  .sp-h22 {
+    display: none;
+  }
+
+  /* 最初の文章 */
+  .map-text-sp .map-p {
+    padding: 0;
+  }
+
+}
