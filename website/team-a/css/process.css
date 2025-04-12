@@ -1,0 +1,434 @@
+@charset "utf-8";
+@import url(common.css);
+
+header {
+  background: #fff;
+}
+
+.f-gnav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+#left9 .f-gnav li {
+  margin: 0;
+  line-height: 1.6em;
+  font-size: .7em;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  word-break: break-all;
+}
+
+/*全体のエリア設定*/
+
+
+.logo_img{
+  width: 80px;
+}
+
+.ms-section {
+  color: #1A1A1A;
+  padding: 8%;
+}
+
+.ms-section a {
+  color: #1A1A1A;
+}
+
+.ms-section1 p,
+.ms-section1 ul {
+  line-height: 1.9em;
+}
+
+
+.process_title {
+  font-size: 3.75rem;
+}
+
+h3{
+  font-size: 2.3rem;
+}
+
+.page_title{
+  writing-mode: vertical-rl;
+  font-size:55px;
+}
+
+.title_box{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 5em;
+}
+
+.ms-section1 p,
+.end_coment {
+   font-size: 1.25rem;
+  line-height: 1.9em;
+}
+
+.end_box{
+  display: flex;
+  flex-flow: column;
+  height: 75%;
+  justify-content: space-between;
+}
+
+/*右にある丸ナビゲーション色*/
+
+#multiscroll-nav span {
+  background: transparent !important;
+  border-color: #fff !important;
+}
+
+/*右にある丸のナビゲーション現在地色*/
+
+#multiscroll-nav li .active span {
+  background: #fff !important;
+}
+
+/*右エリア画像設定*/
+
+#right1 {
+  background: url("../images/process-top.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+
+#right2 {
+  background: url("../images/process1.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right3 {
+  background: url("../images/process2.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right4 {
+  background: url("../images/process3.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right5 {
+  background: url("../images/process4.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right6 {
+  background: url("../images/process5.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right7 {
+  background: url("../images/process6.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right8 {
+  background: url("../images/process7.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+#right9 {
+  background: url("../images/rice_img.jpg");
+  background-position: right center;
+  background-size: cover;
+}
+
+
+/*左エリア画像設定*/
+
+.ms-section {
+  background-image: url(../images/paper.jpg);
+  background-repeat: repeat;
+}
+
+/* .footer
+=========================================== */
+footer {
+  font-size: 1em;
+  text-align: center;
+  padding: 0 0 48px;
+  text-shadow: none;
+  background-image: none;
+}
+
+.end_coment{
+  margin-bottom: 5em;
+}
+
+.ms-section2 .footer-title {
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+}
+
+.f-container {
+  display: flex;
+  justify-content: center 
+}
+
+.foot_table{
+  color: #1A1A1A;
+  font-size: 14px;
+}
+
+.foot_table address{
+  color: #1A1A1A;
+}
+
+.f-container th, td {
+  font-size: 1em;
+}
+
+th{
+  width: 4em;
+}
+
+footer img {
+  width: 70%;
+}
+
+small {
+  color: #1A1A1A;
+  font-size: .75em;
+}
+
+
+
+/*＝＝＝＝＝＝＝＝＝＝＝タブレット以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media screen and (max-width:768px) {
+
+  /*全体のボックスについている余白をリセット*/
+  .ms-section {
+    padding: 0;
+  }
+
+  /*天地中央になっている見せ方を上ぞろえに上書き*/
+  .ms-tableCell {
+    vertical-align: top;
+  }
+
+  /*右上ナビゲーションと右エリア非表示*/
+  #menu,
+  .ms-right {
+    display: none;
+  }
+
+  /*左エリアを横幅100%にして画像＋テキストを出す設定*/
+  .ms-left {
+    width: 100% !important;
+  }
+
+  /*左エリア上部画像設定*/
+  .sp-top {
+    height: 50%;
+    margin: 0 0 20px 0;
+  }
+
+  #left1 .sp-top {
+    background: url("../images/process-top.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left2 .sp-top {
+    background: url("../images/process1.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left3 .sp-top {
+    background: url("../images/process2.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left4 .sp-top {
+    background: url("../images/process3.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left5 .sp-top {
+    background: url("../images/process4.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left6 .sp-top {
+    background: url("../images/process5.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left7 .sp-top {
+    background: url("../images/process6.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left8 .sp-top {
+    background: url("../images/process7.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  #left9 .sp-top {
+    background: url("../images/rice_img.jpg");
+    background-position: right center;
+    background-size: cover;
+  }
+
+  /*左エリア下部テキスト余白設定*/
+  .sp-top {
+    height: 50vh;
+  }
+
+  .page_title{
+    font-size:  35px;
+    margin: 0 1em 0 0;
+  }
+
+  .logo_img{
+    width: 50px;
+  }
+
+  .sp-bottom {
+    padding: 0 40px 0 20px;
+  }
+
+  .ms-section1 p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .ms-section ul {
+    margin-top: 12px;
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .process_title {
+    font-size: 35px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+h3{
+    font-size: 25px;
+    margin-bottom: 1em;
+  }
+
+  .end_coment{
+    font-size: 16px;
+    margin: 0;
+  }
+
+  footer img {
+    width: 120px;
+  }
+
+  .f-gnav {
+    gap: 0;
+  }
+
+  footer {
+    background: none;
+  }
+
+  .f-container{
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 2em;
+}
+
+.end_box{
+  height: 40%;
+}
+
+th{
+  width: 3.5em;
+}
+
+}
+
+/* ここからレスポンシブ----------------------------- */
+
+@media (max-width: 414px) {
+
+.title_box{
+    padding-bottom: 6em;
+  }
+
+  .page_title{
+    font-size:  30px;
+    margin-right: 1em;
+  }
+
+  .process_title {
+    font-size: 22px;
+  }
+
+  .ms-section1 p {
+   font-size: 14px;
+  line-height: 1.9em;
+}
+
+.end_coment{
+  font-size: 14px;
+}_
+
+
+  .logo_img{
+    width: 50px;
+  }
+
+  .f-container{
+    padding: 0;
+  }
+
+  .end_logo{
+    width: 70px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  footer{
+    padding-bottom: 10em;
+  }
+  
+  .sp-bottom {
+    height: 60vh;
+    padding-top: 5%;
+  }
+
+  .sp-top {
+    height: 40vh;
+    margin: 0;
+  }
+
+  .foot_table th{
+    width: 3.5em;
+  }
+  .foot_table{
+    font-size: 12px;
+  }
+}

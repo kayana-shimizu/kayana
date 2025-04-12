@@ -1,0 +1,1006 @@
+@charset "utf-8";
+@import url(common.css);
+
+/* ==================
+共通
+=====================*/
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.buy-mainbg {
+    min-height: 100vh;
+    display: flex;
+}
+
+.buy-ricebg {
+    width: 50%;
+    background-image: url(../images/buy-ricebg.jpg);
+    background-size: cover;
+    background-position: 60% bottom;
+}
+
+.buy-topcontent {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 100px;
+    align-items: end;
+    background: #fff;
+}
+
+.buy-topcontent h2 {
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    font-size: 2.22em;
+    letter-spacing: 0.25em;
+    padding-bottom: 32%;
+    font-weight: normal;
+}
+
+.buy-topcontent p {
+    font-size: 1.2em;
+    padding: 0 90px 72px;
+    line-height: 2em;
+}
+
+.content-whitebg img:hover {
+    opacity: .5;
+}
+
+/* ====================
+タブの切り替えここから 
+=======================*/
+.main-area {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+}
+
+.tab-menu {
+    width: 64px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-size: 1.5em;
+    height: 198px;
+}
+
+.tab-menu {
+    border-top-right-radius: 22px;
+    -webkit-border-top-right-radius: 22px;
+    -moz-border-radius-topright: 22px;
+    border-bottom-right-radius: 22px;
+    -webkit-border-bottom-right-radius: 22px;
+    -moz-border-radius-bottomright: 22px;
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+}
+
+.tab-menu.is-active {
+    background-color: #fa7644;
+    color: #fff;
+    border: 3px solid #fa7644;
+}
+
+.content-box {
+    display: none;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentBox_riceList {
+    height: 650px;
+}
+
+.content-box.is-active {
+    display: flex;
+}
+
+.buy-secbg {
+    background-image: url(../images/paper.jpg);
+    background-repeat: repeat;
+    padding: 136px 0 150px;
+}
+
+/* タブの切り替えここまで */
+
+/* ==============
+ご購入方法ここから 
+=================*/
+
+.content {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.h3-area {
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+}
+
+.h3-area h3 {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    font-weight: normal;
+}
+
+.content-content {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/buy-tab-bg.jpg);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.content2 {
+    display: block;
+
+}
+
+.content-whitebg {
+    background: rgba(255, 255, 255, 0.8);
+    width: 92%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content-whitebg ul {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.content-whitebg ul li img {
+    height: 120px;
+}
+
+.works_link_item {
+    width: 100%;
+}
+.pc-message1 {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 70%;
+    padding: 16px 0;
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.sp-message1 {
+    display: none;
+}
+
+/* ご購入方法ここまで */
+
+/* ================
+商品一覧ここから 
+===================*/
+.kome span {
+    color: #FF0000;
+}
+
+.kome {
+    text-align: center;
+}
+
+.riceInfo_box {
+    background: rgba(255, 255, 255, 0.8);
+    width: 46%;
+    padding: 1% 3%;
+}
+
+.rice_flex {
+    padding: 1.6% 0 0.8% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.orange_button a,
+.green_button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+caption {
+    font-weight: bold;
+}
+
+.genmai {
+    margin-top: 1em;
+}
+
+.rice_item tr {
+    line-height: 1.3em;
+}
+
+.rice_name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0.2em;
+}
+
+.rice_item td,
+.rice_item th {
+    font-size: 17px;
+}
+
+.rice_sample {
+    width: 120px;
+    border-radius: 7px;
+}
+
+.rice_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+}
+
+
+.orange_button a {
+    background-color: #fa7644;
+    margin: 0.5em 0;
+    transition: .3s;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 0.3em;
+    border-radius: 4px;
+}
+
+.green_button a{
+    background-color: #0A9B00;
+    transition: .3s;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 0.3em;
+    border-radius: 4px;
+    
+}
+
+.riceInfo_box a:hover {
+    opacity: .5;
+}
+
+
+/* 商品一覧ここまで */
+
+/*=================
+ 送料ここから 
+ ==================*/
+.rettou {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rettou img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.rettou2 {
+    display: none;
+}
+
+/* 送料ここまで */
+
+/* =======================
+フォームここから 
+=========================*/
+
+.buy-secbg2 {
+    background-image: url(../images/paper.jpg);
+    padding-bottom: 150px;
+    background-repeat: repeat;
+}
+
+.form-container {
+    /* width: 597px; */
+    width: 500px;
+
+    margin: 0 auto;
+}
+
+.form-container h3 {
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    /* margin-bottom: 40px; */
+    margin-bottom: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form p {
+    /* line-height: 0.6em; */
+    width: 100%;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+form p span {
+    border: 1px solid #ff0000;
+    font-size: .8em;
+    padding: 1px 5px;
+    color: #ff0000;
+    margin-left: 4px;
+}
+
+form input {
+    border: 1px solid #C6C5C2;
+    background: rgba(255, 255, 255, 0.5);
+    height: 35px;
+    width: 80%;
+    /* margin-bottom: 20px; */
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.form-sub input {
+    margin: 0 auto 0;
+    display: block;
+    text-align: center;
+    /* width: 200px; */
+    width: 100px;
+    height: 40px;
+    background: #FA7644;
+    color: #fff;
+    border: none;
+}
+
+textarea {
+    border: 1px solid #C6C5C2;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    /* height: 250px; */
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: .3;
+    font-size: 0.8em;
+    padding-left: 4px;
+}
+
+input[type="submit"] {
+    height: 50px;
+}
+
+/*------モーダルウィンドウ----------*/
+
+.modal-wrappers {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px 10px;
+    text-align: center;
+    vertical-align: center;
+
+}
+
+.modal-wrappers:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrappers:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrappers::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: ""
+}
+
+.modal-wrappers .modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 9999;
+    position: relative;
+    width: 70%;
+    height: 90%;
+    margin-top: 5%;
+    max-width: 600px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle
+}
+
+.modal-wrappers .modal-window .modal-content {
+    height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.modal-overlay {
+    z-index: 8888;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+}
+
+.modal-wrappers .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    color: #95979c !important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0
+}
+
+.modal-wrappers.modal-close:hover {
+    color: #2b2e38 !important
+}
+
+.modal-content img {
+    width: 120px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.modal-wrappers span {
+    font-size: 1.25em;
+    display: block;
+    font-weight: bold;
+    border-bottom: 2px solid #B7B7B7;
+    margin: 25px auto auto auto;
+    width: 80%;
+}
+
+.modal-content br {
+    line-height: initial;
+}
+
+.modal-wrappers small {
+    font-size: 0.75em;
+}
+
+.telkotira,
+.hannbaitenn {
+    margin: 5px auto 20px auto;
+    font-size: 1.875em;
+}
+
+.mapwomiru {
+    display: inline-block;
+    padding: 0.25em;
+    border: 1px solid#1a1a1a;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #1a1a1a;
+}
+
+
+/*-----モーダルここまで-----*/
+
+/*-----プライバシーポリシー-----*/
+
+.pra {
+    text-align: center;
+    margin: 150px auto 25px auto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.scrollArea {
+    width: 1000px;
+    height: 300px;
+    overflow: auto;
+    margin: 0 auto 10px auto;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1.5em;
+}
+
+/*スクロールバーの横幅指定*/
+.scrollArea::-webkit-scrollbar {
+    width: 15px;
+}
+
+/*スクロールバーの背景色・角丸指定*/
+.scrollArea::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #aaa inset;
+}
+
+/*スクロールバーの色・角丸指定*/
+.scrollArea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #FA7644;
+}
+
+/*==================
+ レスポンシブここから
+ ================== */
+
+@media (max-width: 1200px) {
+    .buy-topcontent {
+        flex-direction: column;
+        align-items: center;
+        padding: 160px 0 50px;
+    }
+
+    .buy-topcontent h2 {
+        padding-bottom: 10%;
+    }
+
+    .buy-topcontent p {
+        padding: 0 52px;
+    }
+
+    .scrollArea {
+        width: 90%;
+        height: 200px;
+        margin: auto;
+    }
+
+    .pra {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .buy-secbg {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .buy-ricebg {
+        display: none;
+    }
+
+    .buy-topcontent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-image: url(../images/buy-ricebg.jpg); */
+        position: relative;
+        color: #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/buy-ricebg.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        padding: 100px 0;
+        align-items: center;
+    }
+
+    .buy-topcontent p {
+        font-size: 1.12em;
+        padding: 0 72px;
+        line-height: 2.3em;
+    }
+
+    /* タブ切り替えここから */
+    .main-area {
+        flex-direction: column-reverse;
+    }
+
+    .content-box {
+        height: auto;
+    }
+
+    .tab {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tab-menu {
+        width: 33%;
+        height: 57px;
+        writing-mode: horizontal-tb;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: horizontal-tb;
+        font-size: 1.25em;
+    }
+
+    .tab-menu {
+        border-top-right-radius: 22px;
+        -webkit-border-top-right-radius: 22px;
+        -moz-border-radius-topright: 22px;
+        border-bottom-right-radius: 0px;
+        -webkit-border-bottom-right-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 22px;
+        -webkit-border-top-left-radius: 22px;
+        -moz-border-radius-topleft: 22px;
+        border-bottom-left-radius: 0px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomleft: 0px;
+    }
+
+    .h3-area {
+        display: none;
+    }
+
+    /* タブ切り替えここまで */
+    /* ご購入方法ここから */
+    .sp-message1 {
+        margin-top: 33px;
+    }
+
+    .content-content {
+        width: 100%;
+    }
+
+    .content-whitebg {
+        background: none;
+        padding: 0 34px;
+    }
+
+    /* .works_link_item_p{
+        display: block;
+        text-align: center;
+        font-size: 0.75em;
+        margin-bottom: 10px;
+    } */
+
+    .pc-message1 {
+        display: none;
+    }
+
+    .sp-message1 {
+        display: block;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 1.37em;
+        text-align: center;
+        font-weight: bold;
+        padding: 4px 0;
+    }
+
+    .content-whitebg ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .content-whitebg ul li {
+        background: rgba(255, 255, 255, 0.5);
+        width: 47%;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* ご購入方法ここまで */
+
+    /* モーダル */
+    .modal-wrappers .modal-window .modal-content {
+        height: 80vh;
+    }
+    .hannbaitenn {
+        font-size: 1.25em;
+    }
+
+    .modal-wrappers span {
+        font-size: 1em;
+    }
+
+    address {
+        font-size: .875em;
+    }
+
+    .mapwomiru {
+        font-size: .8125em;
+    }
+
+    /* 商品一覧ここから */
+    .rice_flex {
+        flex-direction: column;
+    }
+
+    .riceInfo_box {
+        width: 100%;
+        padding: 7%;
+        margin-bottom: 1.5em;
+    }
+
+    .content-whitebg2 {
+        padding: 7%;
+    }
+
+    .rice_flex {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    caption {
+        font-size: 18px;
+    }
+
+    .rice_name {
+        font-size: 28px;
+    }
+
+    .rice_box {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .rice_sample {
+        width: 150px;
+    }
+
+
+    .orange_button a,
+    .green_button a {
+        font-size: 18px;
+        width: 150px;
+    }
+
+    /* ご購入方法ここまで */
+
+    /* 送料ここから */
+    .rettou {
+        display: none;
+    }
+
+    .content-content {
+        padding: 0;
+    }
+
+    .rettou2 {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .souryou{
+        width: 100%;
+    }
+
+    .rettou2 img {
+        object-fit: contain;
+    }
+
+    /* 送料ここまで */
+
+    /* フォームここから */
+    .form-container {
+        /* width: 100%; */
+        width: 80%;
+
+    }
+
+    .form-container h3 {
+        /* margin-bottom: 30px; */
+        margin-bottom: 15px;
+
+        font-size: 2em;
+    }
+
+    /* form {
+        gap: 10px;
+    } */
+
+    form p {
+        font-size: 1.125em;
+        /* margin-bottom: 5px; */
+    }
+
+    form p span {
+        padding: 2px 3px;
+    }
+
+    form input {
+        width: 80%;
+        height: 32px;
+        /* margin-bottom: 20px; */
+    }
+
+    .form-sub input {
+        /* width: 160px; */
+        width: 100px;
+        /* height: 60px; */
+        height: 40px;
+
+    }
+
+    textarea {
+        width: 100%;
+        /* height: 200px; */
+        height: 100px;
+
+    }
+
+    .buy-secbg2 {
+        padding-bottom: 60px;
+    }
+
+    /* フォームここまで */
+}
+
+/*==================
+ 525px以下
+ ================== */
+@media (max-width: 525px) {
+    .sp-message1 {
+        font-size: 1em;
+    }
+
+}
+
+/*==================
+ 414px以下
+ ================== */
+@media (max-width: 414px) {
+
+    .form-container h3 {
+        font-size: 1.75em;
+    }
+
+    form p {
+        font-size: 1.125em;
+    }
+
+    form p span {
+        font-size: 1em;
+    }
+
+    textarea {
+        width: 100%;
+        /* height: 200px; */
+        height: 100px;
+
+    }
+    .content-whitebg {
+        padding: 0 20px;
+    }
+
+    .wbg2-item {
+        padding: 8px;
+    }
+
+    .tab-menu {
+        font-size: .8em;
+    }
+
+    .buy-topcontent p {
+        padding: 0 20px;
+    }
+
+    .content-whitebg ul li img {
+        height: 60px;
+    }
+    .riceInfo_box {
+        width: 100%;
+        padding: 2%;
+        margin-bottom: 1em;
+    }
+
+    .content-whitebg2 {
+        padding: 2%;
+    }
+
+    .rice_item td,
+    .rice_item th {
+        font-size: 16px;
+    }
+
+    caption {
+        font-size: 16px;
+    }
+
+    .rice_name {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .rice_box {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .rice_sample {
+        width: 130px;
+    }
+
+    .orange_button a,
+    .green_button a {
+        font-size: 16px;
+        width: 130px;
+    }
+
+}
